@@ -1,0 +1,194 @@
+/* Layout Utama */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+/* Box Model */
+th, td {
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td img {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin: 0;
+    padding: 10px;
+    font-size: 24px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Restoran */
+td[colspan="5"] {
+    padding: 20px;
+}
+
+td[colspan="5"] img {
+    max-width: 100px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Form dan Input */
+input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Penerapan Position */
+table {
+    position: relative;
+}
+
+/* Penerapan CSS Grid untuk layout lebih rapi */
+.payment-method {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 15px;
+}
+
+.payment-method label {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.payment-method label:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.info-tambahan {
+    background-color: #e9e9e9;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+/* Small Devices: Smartphones in Portrait Mode */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    td, th {
+        padding: 10px;
+    }
+
+    input[type="text"], input[type="date"] {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    img {
+        width: 60px;
+    }
+
+    td[colspan="4"], td[colspan="5"] {
+        font-size: 12px;
+    }
+}
+
+/* Medium Devices: Tablets in Portrait Mode */
+@media (max-width: 768px) {
+    table {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    td, th {
+        padding: 12px;
+    }
+
+    input[type="text"], input[type="date"] {
+        width: 80%;
+    }
+
+    img {
+        width: 80px;
+    }
+}
+
+/* Large Devices: Tablets in Landscape Mode and Small Desktops */
+@media (max-width: 1024px) {
+    table {
+        width: 85%;
+    }
+
+    td, th {
+        padding: 14px;
+    }
+
+    img {
+        width: 90px;
+    }
+
+    input[type="text"], input[type="date"] {
+        width: 75%;
+    }
+}
+
+/* Extra-Large Devices: Desktops */
+@media (min-width: 1200px) {
+    table {
+        width: 75%;
+    }
+
+    img {
+        width: 100px;
+    }
+
+    td, th {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+}
